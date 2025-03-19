@@ -1,0 +1,158 @@
+.military-ui {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  width: 400px;
+  max-height: 80vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  overflow-y: auto;
+}
+
+.military-stats {
+  margin-bottom: 20px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.stat-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.military-controls {
+  margin-bottom: 20px;
+}
+
+.unit-type-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.unit-type-buttons button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.unit-type-buttons button:hover {
+  background-color: #357abd;
+}
+
+.unit-type-buttons button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.formation-controls {
+  margin-top: 15px;
+}
+
+.formation-controls select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.formation-controls button {
+  width: 100%;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.formation-controls button:hover:not(:disabled) {
+  background-color: #357abd;
+}
+
+.formation-controls button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.military-units, .military-formations {
+  margin-top: 20px;
+}
+
+.units-grid, .formations-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.unit-card, .formation-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.unit-card:hover, .formation-card:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.unit-card.selected, .formation-card.selected {
+  background-color: rgba(74, 144, 226, 0.3);
+  border: 1px solid #4a90e2;
+}
+
+.unit-stats, .formation-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.training-progress {
+  margin-top: 10px;
+  padding: 5px;
+  background-color: rgba(74, 144, 226, 0.2);
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* Scrollbar styling */
+.military-ui::-webkit-scrollbar {
+  width: 8px;
+}
+
+.military-ui::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.military-ui::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.military-ui::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+} 

@@ -1,0 +1,82 @@
+.victory-panel {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  padding: 16px;
+  color: white;
+  min-width: 250px;
+}
+
+.victory-panel h3 {
+  margin: 0 0 12px 0;
+  color: #4CAF50;
+}
+
+.victory-conditions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.victory-condition {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.condition-status {
+  font-size: 1.2em;
+  width: 24px;
+  text-align: center;
+}
+
+.condition-description {
+  font-size: 0.9em;
+  color: #cccccc;
+}
+
+.victory-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.victory-content {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  color: white;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.victory-content h2 {
+  color: #4CAF50;
+  margin: 0 0 16px 0;
+  font-size: 2em;
+}
+
+.victory-content p {
+  margin: 8px 0;
+  font-size: 1.2em;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+} 

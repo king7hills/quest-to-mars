@@ -1,0 +1,87 @@
+.ai-ui {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 300px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.ai-ui h2 {
+  margin: 0 0 20px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.ai-players {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ai-player-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.ai-player-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ai-player-header h3 {
+  margin: 0;
+  font-size: 1.1em;
+  color: #fff;
+}
+
+.diplomatic-status {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.ai-player-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.info-row span:first-child {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Scrollbar styles */
+.ai-ui::-webkit-scrollbar {
+  width: 8px;
+}
+
+.ai-ui::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.ai-ui::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.ai-ui::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+} 

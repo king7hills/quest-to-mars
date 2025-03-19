@@ -1,0 +1,85 @@
+.building-ui {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 300px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.building-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.building-category {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.building-category h3 {
+  margin: 0;
+  color: #4CAF50;
+  font-size: 1.2em;
+}
+
+.building-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.building-button {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.building-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.building-button.selected {
+  background: rgba(76, 175, 80, 0.3);
+  border-color: #4CAF50;
+}
+
+.building-button.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.building-details {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.building-details h4 {
+  margin: 0 0 10px 0;
+  color: #4CAF50;
+}
+
+.building-details p {
+  margin: 5px 0;
+}
+
+.building-details ul {
+  margin: 5px 0;
+  padding-left: 20px;
+}
+
+.building-details li {
+  margin: 3px 0;
+} 

@@ -1,0 +1,57 @@
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.topbar-nav {
+  display: flex;
+  gap: 8px;
+}
+
+.topbar-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.topbar-button {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.topbar-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.topbar-button.active {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+.button-icon {
+  font-size: 1.2em;
+}
+
+.button-label {
+  font-size: 0.9em;
+  font-weight: 500;
+} 

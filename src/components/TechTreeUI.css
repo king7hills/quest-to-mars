@@ -1,0 +1,165 @@
+.tech-tree-ui {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 300px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.tech-tree-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tech-epoch {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tech-epoch h3 {
+  margin: 0;
+  color: #4CAF50;
+  font-size: 1.2em;
+}
+
+.tech-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tech-button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tech-button {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-button:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.tech-button.researched {
+  background: rgba(76, 175, 80, 0.3);
+  border-color: #4CAF50;
+}
+
+.tech-button.researching {
+  background: rgba(33, 150, 243, 0.3);
+  border-color: #2196F3;
+}
+
+.tech-button.available {
+  background: rgba(255, 152, 0, 0.3);
+  border-color: #FF9800;
+}
+
+.tech-button.locked {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.tech-name {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.tech-cost {
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+.research-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.2);
+  width: 100%;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #2196F3;
+  transition: width 0.3s ease;
+}
+
+.cancel-research {
+  background: rgba(244, 67, 54, 0.3);
+  border: 1px solid #F44336;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8em;
+  align-self: flex-end;
+}
+
+.cancel-research:hover {
+  background: rgba(244, 67, 54, 0.5);
+}
+
+.tech-story-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.tech-story-content {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.tech-story-content h2 {
+  margin: 0 0 10px 0;
+  color: #4CAF50;
+}
+
+.tech-story-content p {
+  margin: 0 0 20px 0;
+  line-height: 1.5;
+}
+
+.tech-story-content button {
+  background: #4CAF50;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tech-story-content button:hover {
+  background: #45a049;
+} 

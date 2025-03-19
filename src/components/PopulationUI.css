@@ -1,0 +1,93 @@
+.population-ui {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  min-width: 300px;
+  max-width: 400px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.population-ui h3 {
+  margin: 0 0 15px 0;
+  color: #4CAF50;
+  font-size: 1.2em;
+}
+
+.population-stats,
+.population-assignments,
+.population-controls,
+.population-effects {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.stat-row,
+.assignment-row,
+.effect-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.population-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.population-controls select,
+.population-controls input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #4CAF50;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.population-controls button {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.population-controls button:hover {
+  background-color: #45a049;
+}
+
+.population-controls button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Scrollbar styling */
+.population-ui::-webkit-scrollbar {
+  width: 8px;
+}
+
+.population-ui::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.population-ui::-webkit-scrollbar-thumb {
+  background: #4CAF50;
+  border-radius: 4px;
+}
+
+.population-ui::-webkit-scrollbar-thumb:hover {
+  background: #45a049;
+} 
